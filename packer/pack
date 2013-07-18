@@ -1,13 +1,15 @@
 #!/bin/bash
 chmod 777 *
-#echo Cloning PrimoU Ramdisk
-#git clone git://github.com/simonsimons34/android_primou-ramdisk.git ramdisk
 echo Making Required Directorys
 if [[ ! -e ramdisk/lib/modules ]]; then
             mkdir -p ramdisk/lib/modules
 fi
 echo Copying Any Compiled Modules
-#find '../' -name "*.ko" -exec cp -av {} ramdisk/lib/modules/ \;
+find '../' -name "bcmdhd.ko" -exec cp -av {} ramdisk/lib/modules/ \;
+find '../' -name "bnep.ko" -exec cp -av {} ramdisk/lib/modules/ \;
+find '../' -name "hci_uart.ko" -exec cp -av {} ramdisk/lib/modules/ \;
+find '../' -name "hidp.ko" -exec cp -av {} ramdisk/lib/modules/ \;
+find '../' -name "rfcomm.ko" -exec cp -av {} ramdisk/lib/modules/ \;
 echo Creating RamDisk
 ./mkbootfs ramdisk | gzip > ramdisk.gz
 NOW=$(date +"%m-%d-%y_%H:%M")
