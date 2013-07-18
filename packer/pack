@@ -18,3 +18,4 @@ find '../' -name "zImage" -exec cp -av {} zImage \;
 echo Compiling SuperSlick-"$NOW".img
 ./mkbootimg --kernel zImage --ramdisk ramdisk.gz -o IRONMAN-"$NOW".img --base 13f00000
 echo Completed Builing IRONMAN-"$NOW".img
+rm ramdisk.gz
