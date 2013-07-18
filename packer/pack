@@ -1,0 +1,18 @@
+#!/bin/bash
+chmod 777 *
+#echo Cloning PrimoU Ramdisk
+#git clone git://github.com/simonsimons34/android_primou-ramdisk.git ramdisk
+echo Making Required Directorys
+if [[ ! -e ramdisk/lib/modules ]]; then
+            mkdir -p ramdisk/lib/modules
+fi
+echo Copying Any Compiled Modules
+#find '../' -name "*.ko" -exec cp -av {} ramdisk/lib/modules/ \;
+echo Creating RamDisk
+./mkbootfs ramdisk | gzip > ramdisk.gz
+NOW=$(date +"%m-%d-%y_%H:%M")
+echo Copying zImage
+find '../' -name "zImage" -exec cp -av {} zImage \;
+echo Compiling SuperSlick-"$NOW".img
+./mkbootimg --kernel zImage --ramdisk ramdisk.gz -o IRONMAN-"$NOW".img --base 13f00000
+echo Completed Builing IRONMAN-"$NOW".img
