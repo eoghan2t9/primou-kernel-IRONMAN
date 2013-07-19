@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Ironman Kernel For Primou</title>
+    <title>Corgi: A new Bootstrap Theme</title>
     <meta name="description" content="A new bootstrap theme">
     <meta name="author" content="Damian Sowers">
     <!-- Le styles -->
@@ -37,9 +37,11 @@
           <a class="brand" href="#">Corgi</a>
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-              <li class="active"><a href="#">Downloads:</a></li>
-              <li><a href="https://github.com/eoghan2t9/primou-kernel-IRONMAN/tarball/master">Tar</a></li>
-              <li><a href="https://github.com/eoghan2t9/primou-kernel-IRONMAN/zipball/master">Zip</a></li>
+              <li class="active"><a href="#">These</a></li>
+              <li><a href="#contact">Are</a></li>
+              <li><a href="#contact">Just</a></li>
+              <li><a href="#about">Dummy</a></li>
+              <li><a href="#contact">Links</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
