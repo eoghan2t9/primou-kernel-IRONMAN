@@ -1,437 +1,454 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Primou-kernel-ironman by eoghan2t9</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Corgi: A new Bootstrap Theme</title>
+    <meta name="description" content="A new bootstrap theme">
+    <meta name="author" content="Damian Sowers">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+    <link href='css/corgi.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/elusive-webfont.css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/corgi.js" type="text/javascript"></script>
+    <!-- elusive icons ie7 support -->
+    <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
 
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+      body {
+        padding-top: 80px; /* Only include this for the fixed top bar */
+      }
+    </style>
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/eoghan2t9/primou-kernel-IRONMAN">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/eoghan2t9/primou-kernel-IRONMAN/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/eoghan2t9/primou-kernel-IRONMAN/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Primou-kernel-ironman</h1>
-          <p>HTC One V Kernel</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/eoghan2t9">eoghan2t9</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Corgi</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li class="active"><a href="#">These</a></li>
+              <li><a href="#contact">Are</a></li>
+              <li><a href="#contact">Just</a></li>
+              <li><a href="#about">Dummy</a></li>
+              <li><a href="#contact">Links</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-
-        <pre><code>Linux kernel release 3.x &lt;http://kernel.org/&gt;
-</code></pre>
-
-<p>These are the release notes for Linux version 3.  Read them carefully,
-as they tell you what this is all about, explain how to install the
-kernel, and what to do if something goes wrong. </p>
-
-<p>WHAT IS LINUX?</p>
-
-<p>Linux is a clone of the operating system Unix, written from scratch by
-  Linus Torvalds with assistance from a loosely-knit team of hackers across
-  the Net. It aims towards POSIX and Single UNIX Specification compliance.</p>
-
-<p>It has all the features you would expect in a modern fully-fledged Unix,
-  including true multitasking, virtual memory, shared libraries, demand
-  loading, shared copy-on-write executables, proper memory management,
-  and multistack networking including IPv4 and IPv6.</p>
-
-<p>It is distributed under the GNU General Public License - see the
-  accompanying COPYING file for more details. </p>
-
-<p>ON WHAT HARDWARE DOES IT RUN?</p>
-
-<p>Although originally developed first for 32-bit x86-based PCs (386 or higher),
-  today Linux also runs on (at least) the Compaq Alpha AXP, Sun SPARC and
-  UltraSPARC, Motorola 68000, PowerPC, PowerPC64, ARM, Hitachi SuperH, Cell,
-  IBM S/390, MIPS, HP PA-RISC, Intel IA-64, DEC VAX, AMD x86-64, AXIS CRIS,
-  Xtensa, Tilera TILE, AVR32 and Renesas M32R architectures.</p>
-
-<p>Linux is easily portable to most general-purpose 32- or 64-bit architectures
-  as long as they have a paged memory management unit (PMMU) and a port of the
-  GNU C compiler (gcc) (part of The GNU Compiler Collection, GCC). Linux has
-  also been ported to a number of architectures without a PMMU, although
-  functionality is then obviously somewhat limited.
-  Linux has also been ported to itself. You can now run the kernel as a
-  userspace application - this is called UserMode Linux (UML).</p>
-
-<p>DOCUMENTATION:</p>
-
-<ul>
-<li><p>There is a lot of documentation available both in electronic form on
-the Internet and in books, both Linux-specific and pertaining to
-general UNIX questions.  I'd recommend looking into the documentation
-subdirectories on any Linux FTP site for the LDP (Linux Documentation
-Project) books.  This README is not meant to be documentation on the
-system: there are much better sources available.</p></li>
-<li><p>There are various README files in the Documentation/ subdirectory:
-these typically contain kernel-specific installation notes for some 
-drivers for example. See Documentation/00-INDEX for a list of what
-is contained in each file.  Please read the Changes file, as it
-contains information about the problems, which may result by upgrading
-your kernel.</p></li>
-<li><p>The Documentation/DocBook/ subdirectory contains several guides for
-kernel developers and users.  These guides can be rendered in a
-number of formats:  PostScript (.ps), PDF, HTML, &amp; man-pages, among others.
-After installation, "make psdocs", "make pdfdocs", "make htmldocs",
-or "make mandocs" will render the documentation in the requested format.</p></li>
-</ul><p>INSTALLING the kernel source:</p>
-
-<ul>
-<li>
-<p>If you install the full sources, put the kernel tarball in a
-directory where you have permissions (eg. your home directory) and
-unpack it:</p>
-
-<pre><code>gzip -cd linux-3.X.tar.gz | tar xvf -
-</code></pre>
-
-<p>or
-    bzip2 -dc linux-3.X.tar.bz2 | tar xvf -</p>
-
-<p>Replace "XX" with the version number of the latest kernel.</p>
-
-<p>Do NOT use the /usr/src/linux area! This area has a (usually
-incomplete) set of kernel headers that are used by the library header
-files.  They should match the library, and not get messed up by
-whatever the kernel-du-jour happens to be.</p>
-</li>
-<li>
-<p>You can also upgrade between 3.x releases by patching.  Patches are
-distributed in the traditional gzip and the newer bzip2 format.  To
-install by patching, get all the newer patch files, enter the
-top level directory of the kernel source (linux-3.x) and execute:</p>
-
-<pre><code>gzip -cd ../patch-3.x.gz | patch -p1
-</code></pre>
-
-<p>or
-    bzip2 -dc ../patch-3.x.bz2 | patch -p1</p>
-
-<p>(repeat xx for all versions bigger than the version of your current
-source tree, <em>in_order</em>) and you should be ok.  You may want to remove
-the backup files (xxx~ or xxx.orig), and make sure that there are no
-failed patches (xxx# or xxx.rej). If there are, either you or me has
-made a mistake.</p>
-
-<p>Unlike patches for the 3.x kernels, patches for the 3.x.y kernels
-(also known as the -stable kernels) are not incremental but instead apply
-directly to the base 3.x kernel.  Please read
-Documentation/applying-patches.txt for more information.</p>
-
-<p>Alternatively, the script patch-kernel can be used to automate this
-process.  It determines the current kernel version and applies any
-patches found.</p>
-
-<pre><code>linux/scripts/patch-kernel linux
-</code></pre>
-
-<p>The first argument in the command above is the location of the
-kernel source.  Patches are applied from the current directory, but
-an alternative directory can be specified as the second argument.</p>
-</li>
-<li><p>If you are upgrading between releases using the stable series patches
-(for example, patch-3.x.y), note that these "dot-releases" are
-not incremental and must be applied to the 3.x base tree. For
-example, if your base kernel is 3.0 and you want to apply the
-3.0.3 patch, you do not and indeed must not first apply the
-3.0.1 and 3.0.2 patches. Similarly, if you are running kernel
-version 3.0.2 and want to jump to 3.0.3, you must first
-reverse the 3.0.2 patch (that is, patch -R) <em>before</em> applying
-the 3.0.3 patch.
-You can read more on this in Documentation/applying-patches.txt</p></li>
-<li>
-<p>Make sure you have no stale .o files and dependencies lying around:</p>
-
-<pre><code>cd linux
-make mrproper
-</code></pre>
-
-<p>You should now have the sources correctly installed.</p>
-</li>
-</ul><p>SOFTWARE REQUIREMENTS</p>
-
-<p>Compiling and running the 3.x kernels requires up-to-date
-   versions of various software packages.  Consult
-   Documentation/Changes for the minimum version numbers required
-   and how to get updates for these packages.  Beware that using
-   excessively old versions of these packages can cause indirect
-   errors that are very difficult to track down, so don't assume that
-   you can just update packages when obvious problems arise during
-   build or operation.</p>
-
-<p>BUILD directory for the kernel:</p>
-
-<p>When compiling the kernel all output files will per default be
-   stored together with the kernel source code.
-   Using the option "make O=output/dir" allow you to specify an alternate
-   place for the output files (including .config).
-   Example:
-     kernel source code:    /usr/src/linux-3.N
-     build directory:       /home/name/build/kernel</p>
-
-<p>To configure and build the kernel use:
-   cd /usr/src/linux-3.N
-   make O=/home/name/build/kernel menuconfig
-   make O=/home/name/build/kernel
-   sudo make O=/home/name/build/kernel modules_install install</p>
-
-<p>Please note: If the 'O=output/dir' option is used then it must be
-   used for all invocations of make.</p>
-
-<p>CONFIGURING the kernel:</p>
-
-<p>Do not skip this step even if you are only upgrading one minor
-   version.  New configuration options are added in each release, and
-   odd problems will turn up if the configuration files are not set up
-   as expected.  If you want to carry your existing configuration to a
-   new version with minimal work, use "make oldconfig", which will
-   only ask you for the answers to new questions.</p>
-
-<ul>
-<li>
-<p>Alternate configuration commands are:
-"make config"      Plain text interface.
-"make menuconfig"  Text based color menus, radiolists &amp; dialogs.
-"make nconfig"     Enhanced text based color menus.
-"make xconfig"     X windows (Qt) based configuration tool.
-"make gconfig"     X windows (Gtk) based configuration tool.
-"make oldconfig"   Default all questions based on the contents of
-           your existing ./.config file and asking about
-           new config symbols.
-"make silentoldconfig"
-           Like above, but avoids cluttering the screen
-           with questions already answered.
-           Additionally updates the dependencies.
-"make defconfig"   Create a ./.config file by using the default
-           symbol values from either arch/$ARCH/defconfig
-           or arch/$ARCH/configs/${PLATFORM}_defconfig,
-           depending on the architecture.
-"make ${PLATFORM}_defconfig"
-          Create a ./.config file by using the default
-          symbol values from
-          arch/$ARCH/configs/${PLATFORM}_defconfig.
-          Use "make help" to get a list of all available
-          platforms of your architecture.
-"make allyesconfig"
-           Create a ./.config file by setting symbol
-           values to 'y' as much as possible.
-"make allmodconfig"
-           Create a ./.config file by setting symbol
-           values to 'm' as much as possible.
-"make allnoconfig" Create a ./.config file by setting symbol
-           values to 'n' as much as possible.
-"make randconfig"  Create a ./.config file by setting symbol
-           values to random values.</p>
-
-<p>You can find more information on using the Linux kernel config tools
-in Documentation/kbuild/kconfig.txt.</p>
-
-<p>NOTES on "make config":</p>
-
-<ul>
-<li>having unnecessary drivers will make the kernel bigger, and can
-under some circumstances lead to problems: probing for a
-nonexistent controller card may confuse your other controllers</li>
-<li>compiling the kernel with "Processor type" set higher than 386
-will result in a kernel that does NOT work on a 386.  The
-kernel will detect this on bootup, and give up.</li>
-<li>A kernel with math-emulation compiled in will still use the
-coprocessor if one is present: the math emulation will just
-never get used in that case.  The kernel will be slightly larger,
-but will work on different machines regardless of whether they
-have a math coprocessor or not. </li>
-<li>the "kernel hacking" configuration details usually result in a
-bigger or slower kernel (or both), and can even make the kernel
-less stable by configuring some routines to actively try to
-break bad code to find kernel problems (kmalloc()).  Thus you
-should probably answer 'n' to the questions for
-  "development", "experimental", or "debugging" features.</li>
-</ul>
-</li>
-</ul><p>COMPILING the kernel:</p>
-
-<ul>
-<li>
-<p>Make sure you have at least gcc 3.2 available.
-For more information, refer to Documentation/Changes.</p>
-
-<p>Please note that you can still run a.out user programs with this kernel.</p>
-</li>
-<li>
-<p>Do a "make" to create a compressed kernel image. It is also
-possible to do "make install" if you have lilo installed to suit the
-kernel makefiles, but you may want to check your particular lilo setup first.</p>
-
-<p>To do the actual install you have to be root, but none of the normal
-build should require that. Don't take the name of root in vain.</p>
-</li>
-<li><p>If you configured any of the parts of the kernel as `modules', you
-will also have to do "make modules_install".</p></li>
-<li>
-<p>Verbose kernel compile/build output:</p>
-
-<p>Normally the kernel build system runs in a fairly quiet mode (but not
-totally silent).  However, sometimes you or other kernel developers need
-to see compile, link, or other commands exactly as they are executed.
-For this, use "verbose" build mode.  This is done by inserting
-"V=1" in the "make" command.  E.g.:</p>
-
-<p>make V=1 all</p>
-
-<p>To have the build system also tell the reason for the rebuild of each
-target, use "V=2".  The default is "V=0".</p>
-</li>
-<li><p>Keep a backup kernel handy in case something goes wrong.  This is 
-especially true for the development releases, since each new release
-contains new code which has not been debugged.  Make sure you keep a
-backup of the modules corresponding to that kernel, as well.  If you
-are installing a new kernel with the same version number as your
-working kernel, make a backup of your modules directory before you
-do a "make modules_install".
-Alternatively, before compiling, use the kernel config option
-"LOCALVERSION" to append a unique suffix to the regular kernel version.
-LOCALVERSION can be set in the "General Setup" menu.</p></li>
-<li><p>In order to boot your new kernel, you'll need to copy the kernel
-image (e.g. .../linux/arch/i386/boot/bzImage after compilation)
-to the place where your regular bootable kernel is found. </p></li>
-<li>
-<p>Booting a kernel directly from a floppy without the assistance of a
-bootloader such as LILO, is no longer supported.</p>
-
-<p>If you boot Linux from the hard drive, chances are you use LILO which
-uses the kernel image as specified in the file /etc/lilo.conf.  The
-kernel image file is usually /vmlinuz, /boot/vmlinuz, /bzImage or
-/boot/bzImage.  To use the new kernel, save a copy of the old image
-and copy the new image over the old one.  Then, you MUST RERUN LILO
-to update the loading map!! If you don't, you won't be able to boot
-the new kernel image.</p>
-
-<p>Reinstalling LILO is usually a matter of running /sbin/lilo. 
-You may wish to edit /etc/lilo.conf to specify an entry for your
-old kernel image (say, /vmlinux.old) in case the new one does not
-work.  See the LILO docs for more information. </p>
-
-<p>After reinstalling LILO, you should be all set.  Shutdown the system,
-reboot, and enjoy!</p>
-
-<p>If you ever need to change the default root device, video mode,
-ramdisk size, etc.  in the kernel image, use the 'rdev' program (or
-alternatively the LILO boot options when appropriate).  No need to
-recompile the kernel to change these parameters. </p>
-</li>
-<li><p>Reboot with the new kernel and enjoy. </p></li>
-</ul><p>IF SOMETHING GOES WRONG:</p>
-
-<ul>
-<li><p>If you have problems that seem to be due to kernel bugs, please check
-the file MAINTAINERS to see if there is a particular person associated
-with the part of the kernel that you are having trouble with. If there
-isn't anyone listed there, then the second best thing is to mail
-them to me (<a href="mailto:torvalds@linux-foundation.org">torvalds@linux-foundation.org</a>), and possibly to any other
-relevant mailing-list or to the newsgroup.</p></li>
-<li><p>In all bug-reports, <em>please</em> tell what kernel you are talking about,
-how to duplicate the problem, and what your setup is (use your common
-sense).  If the problem is new, tell me so, and if the problem is
-old, please try to tell me when you first noticed it.</p></li>
-<li>
-<p>If the bug results in a message like</p>
-
-<p>unable to handle kernel paging request at address C0000010
-Oops: 0002
-EIP:   0010:XXXXXXXX
-eax: xxxxxxxx   ebx: xxxxxxxx   ecx: xxxxxxxx   edx: xxxxxxxx
-esi: xxxxxxxx   edi: xxxxxxxx   ebp: xxxxxxxx
-ds: xxxx  es: xxxx  fs: xxxx  gs: xxxx
-Pid: xx, process nr: xx
-xx xx xx xx xx xx xx xx xx xx</p>
-
-<p>or similar kernel debugging information on your screen or in your
-system log, please duplicate it <em>exactly</em>.  The dump may look
-incomprehensible to you, but it does contain information that may
-help debugging the problem.  The text above the dump is also
-important: it tells something about why the kernel dumped code (in
-the above example it's due to a bad kernel pointer). More information
-on making sense of the dump is in Documentation/oops-tracing.txt</p>
-</li>
-<li><p>If you compiled the kernel with CONFIG_KALLSYMS you can send the dump
-as is, otherwise you will have to use the "ksymoops" program to make
-sense of the dump (but compiling with CONFIG_KALLSYMS is usually preferred).
-This utility can be downloaded from
-<a>ftp://ftp</a>..kernel.org/pub/linux/utils/kernel/ksymoops/ .
-Alternately you can do the dump lookup by hand:</p></li>
-<li>
-<p>In debugging dumps like the above, it helps enormously if you can
-look up what the EIP value means.  The hex value as such doesn't help
-me or anybody else very much: it will depend on your particular
-kernel setup.  What you should do is take the hex value from the EIP
-line (ignore the "0010:"), and look it up in the kernel namelist to
-see which kernel function contains the offending address.</p>
-
-<p>To find out the kernel function name, you'll need to find the system
-binary associated with the kernel that exhibited the symptom.  This is
-the file 'linux/vmlinux'.  To extract the namelist and match it against
-the EIP from the kernel crash, do:</p>
-
-<pre><code>nm vmlinux | sort | less
-</code></pre>
-
-<p>This will give you a list of kernel addresses sorted in ascending
-order, from which it is simple to find the function that contains the
-offending address.  Note that the address given by the kernel
-debugging messages will not necessarily match exactly with the
-function addresses (in fact, that is very unlikely), so you can't
-just 'grep' the list: the list will, however, give you the starting
-point of each kernel function, so by looking for the function that
-has a starting address lower than the one you are searching for but
-is followed by a function with a higher address you will find the one
-you want.  In fact, it may be a good idea to include a bit of
-"context" in your problem report, giving a few lines around the
-interesting one. </p>
-
-<p>If you for some reason cannot do the above (you have a pre-compiled
-kernel image or similar), telling me as much about your setup as
-possible will help.  Please read the REPORTING-BUGS document for details.</p>
-</li>
-<li>
-<p>Alternately, you can use gdb on a running kernel. (read-only; i.e. you
-cannot change values or set break points.) To do this, first compile the
-kernel with -g; edit arch/i386/Makefile appropriately, then do a "make
-clean". You'll also need to enable CONFIG_PROC_FS (via "make config").</p>
-
-<p>After you've rebooted with the new kernel, do "gdb vmlinux /proc/kcore".
-You can now use all the usual gdb commands. The command to look up the
-point where your system crashed is "l *0xXXXXXXXX". (Replace the XXXes
-with the EIP value.)</p>
-
-<p>gdb'ing a non-running kernel currently fails because gdb (wrongly)
-disregards the starting offset for which the kernel is compiled.</p>
-</li>
-</ul>
-      </section>
-
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+          <div class="corgi_feed_well">
+            <div class="feed_stacked">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/corgi.jpg" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <p>This micro bootstrap theme is great for any application that requires a feed stream. It has a stacked feed layout and an individual feed layout too.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_area">
+                  <p>Add a comment</p>
+                  <form>
+                    <textarea rows="3" class="span6"></textarea><br/>
+                    <input type="submit" class="btn" />
+                  </form>
+                </div>
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="bottom_left">
+                      <div class="share_wrapper">
+                        <div class="share"><a href="#" class="share_button"><i class="icon-heart"></i></a></div>
+                        <div class="share_hidden">
+                          <ul class="hover_heart">
+                            <span class="internal_heart"><i class="icon-heart"></i> Share This Post</span> 
+                            <div class="social_links">
+                              <li><span><i class="icon-twitter"></i> Twitter</span></li>
+                              <li><span><i class="icon-facebook"></i> Facebook</span></li>
+                              <li><span><i class="icon-pinterest"></i> Pinterest</span></li>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom_right">
+                      <a href="#">Corgi_like_bacon1</a> <span>|</span> <a href="#" class="show_comment_link">comment</a> <span>|</span> 2 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feed_stacked last_feed_item">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/retriever.jpg" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <p>Corgi is built with Bootstrap and it only adds 200 lines of css, so it won't get in your way. Stop fighting your theme code.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_area">
+                  <p>Add a comment</p>
+                  <form>
+                    <textarea rows="3" class="span6"></textarea><br/>
+                    <input type="submit" class="btn" />
+                  </form>
+                </div>
+                <hr class="feed_hr">
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="bottom_left">
+                      <div class="share_wrapper">
+                        <div class="share"><a href="#" class="share_button"><i class="icon-heart"></i></a></div>
+                        <div class="share_hidden">
+                          <ul class="hover_heart">
+                            <span class="internal_heart"><i class="icon-heart"></i> Share This Post</span> 
+                            <div class="social_links">
+                              <li><span><i class="icon-twitter"></i> Twitter</span></li>
+                              <li><span><i class="icon-facebook"></i> Facebook</span></li>
+                              <li><span><i class="icon-pinterest"></i> Pinterest</span></li>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom_right">
+                      <a href="#">Sticks_are_the_best</a> <span>|</span> <a href="#"  class="show_comment_link">comment</a> <span>|</span> 2 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="corgi_feed_well">
+            <div class="individual_feed_item">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/boxer.jpg" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <p>Click on the comment link in the lower right. It has a hidden dropdown comment area built in. Woof!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_area">
+                  <p>Add a comment</p>
+                  <form>
+                    <textarea rows="3" class="span6"></textarea><br/>
+                    <input type="submit" class="btn" />
+                  </form>
+                </div>
+                <hr class="feed_hr" />
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="bottom_left">
+                      <div class="share_wrapper">
+                        <div class="share"><a href="#" class="share_button"><i class="icon-heart"></i></a></div>
+                        <div class="share_hidden">
+                          <ul class="hover_heart">
+                            <span class="internal_heart"><i class="icon-heart"></i> Share This Post</span> 
+                            <div class="social_links">
+                              <li><span><i class="icon-twitter"></i> Twitter</span></li>
+                              <li><span><i class="icon-facebook"></i> Facebook</span></li>
+                              <li><span><i class="icon-pinterest"></i> Pinterest</span></li>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom_right">
+                      <a href="#">Sir_woofs_alot</a> <span>|</span> <a href="#" class="show_comment_link">comment</a> <span>|</span> 2 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="corgi_feed_well">
+            <div class="individual_feed_item">
+              <div class="feed_item">
+                <div class="feed_body">
+                  <div class="row">
+                    <div class="feed_profile_pic">
+                      <img src="img/sharpei.jpg" alt="meta image" class="meta_image" />
+                    </div>
+                    <div class="feed_text">
+                      <p>The top navbar is bigger than the default bootstrap nav to accommodate a standard logo. Looks nice, even through all these wrinkles.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_area">
+                  <p>Add a comment</p>
+                  <form>
+                    <textarea rows="3" class="span6"></textarea><br/>
+                    <input type="submit" class="btn" />
+                  </form>
+                </div>
+                <hr class="feed_hr" />
+                <div class="bottom_meta">
+                  <div class="row">
+                    <div class="bottom_left">
+                      <div class="share_wrapper">
+                        <div class="share"><a href="#" class="share_button"><i class="icon-heart"></i></a></div>
+                        <div class="share_hidden">
+                          <ul class="hover_heart">
+                            <span class="internal_heart"><i class="icon-heart"></i> Share This Post</span> 
+                            <div class="social_links">
+                              <li><span><i class="icon-twitter"></i> Twitter</span></li>
+                              <li><span><i class="icon-facebook"></i> Facebook</span></li>
+                              <li><span><i class="icon-pinterest"></i> Pinterest</span></li>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom_right">
+                      <a href="#">Smell_ya_later</a> <span>|</span> <a href="#" class="show_comment_link">comment</a> <span>|</span> 2 days ago
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- end span8 -->
+        <div class="span4">
+          <div class="corgi_feed_well">
+            <div class="sidebar_header">
+              <div class="sidebar_title">
+                <h4>Theme UI Features</h4>
+              </div>
+            </div>
+            <hr class="feed_hr" />
+            <div class="sidebar_interior">
+              <i class="icon-ok"></i> Stacked Feed Layout
+              <br/><br/>
+              <i class="icon-ok"></i> Individual Feed Layout
+              <br/><br/>
+              <i class="icon-twitter"></i> Built with Bootstrap
+              <br/><br/>
+              <i class="icon-github"></i> Elusive Web Icons Included
+              <br/><br/>
+              <i class="icon-plus-sign"></i> Expandable Hidden Comment Area <span style="font-size:12px; color: #57ad68; font-weight:bold"> Click the comment links!</span>
+              <br/><br/>
+              <i class="icon-cogs"></i> Subtle Background Gradients
+              <br/><br/>
+              <i class="icon-plus-sign"></i> Expandable Heart Button
+              <br/><br/>
+              <i class="icon-hand-right"></i> Taller, Semi-Transparent Navbar
+              <br/><br/>
+              <i class="icon-fontsize"></i> Custom Brand Font
+              <br/><br/>
+              <i class="icon-view-mode"></i> Can be made responsive with one line of html
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div class="corgi_feed_well">
+            <div class="well_padding">
+              <h2>Various UI icons included</h2>
+            </div>
+            <hr class="title_hr" />
+            <div class="well_padding">
+              <p>Corgi uses the <a href="http://aristeides.com/elusive-iconfont/">Elusive icon pack.</a> (in addition to the standard bootstrap icons)</p>
+              <ul class="elusive_icons">
+                <div class="row">
+                <div class="span2">
+                  <li><i class="icon-facebook"></i> icon-facebook</li>
+                  <li><i class="icon-twitter"></i> icon-twitter</li>
+                  <li><i class="icon-googleplus"></i> icon-googleplus</li>
+                  <li><i class="icon-linkedin"></i> icon-linkedin</li>
+                  <li><i class="icon-pinterest"></i> icon-pinterest</li>
+                  <li><i class="icon-foursquare"></i> icon-foursquare</li>
+                  <li><i class="icon-youtube"></i> icon-youtube</li>
+                  <li><i class="icon-vimeo"></i> icon-vimeo</li>
+                  <li><i class="icon-skype"></i> icon-skype</li>
+                  <li><i class="icon-picasa"></i> icon-picasa</li>
+                  <li><i class="icon-stumbleupon"></i> icon-stumbleupon</li>
+                  <li><i class="icon-digg"></i> icon-digg</li>
+                  <li><i class="icon-tumblr"></i> icon-tumblr</li>
+                  <li><i class="icon-github"></i> icon-github</li>
+                  <li><i class="icon-github-text"></i> icon-github-text</li>
+                  <li><i class="icon-friendfeed"></i> icon-friendfeed</li>
+                  <li><i class="icon-friendfeed-rect"></i> icon-friendfeed-rect</li>
+                  <li><i class="icon-wordpress"></i> icon-wordpress</li>
+                  <li><i class="icon-slideshare"></i> icon-slideshare</li>
+                  <li><i class="icon-reddit"></i> icon-reddit</li>
+                  <li><i class="icon-dribble"></i> icon-dribble</li>
+                  <li><i class="icon-behance"></i> icon-behance</li>
+                  <li><i class="icon-deviantart"></i> icon-deviantart</li>
+                  <li><i class="icon-delicious"></i> icon-delicious</li>
+                  <li><i class="icon-stackoverflow"></i> icon-stackoverflow</li>
+                  <li><i class="icon-vkontakte"></i> icon-vkontakte</li>
+                </div>
+                <div class="span2">
+                  <li><i class="icon-website"></i> icon-website</li>
+                  <li><i class="icon-website-alt"></i> icon-website-alt</li>
+                  <li><i class="icon-fontsize"></i> icon-fontsize</li>
+                  <li><i class="icon-view-mode"></i> icon-view-mode</li>
+                  <li><i class="icon-wrench-alt"></i> icon-wrench-alt</li>
+                  <li><i class="icon-video-chat"></i> icon-video-chat</li>
+                  <li><i class="icon-video-alt"></i> icon-video-alt</li>
+                  <li><i class="icon-star-alt"></i> icon-star-alt</li>
+                  <li><i class="icon-video"></i> icon-video</li>
+                  <li><i class="icon-unlock"></i> icon-unlock</li>
+                  <li><i class="icon-unlock-alt"></i> icon-unlock-alt</li>
+                  <li><i class="icon-trash-alt"></i> icon-trash-alt</li>
+                  <li><i class="icon-torso"></i> icon-torso</li>
+                  <li><i class="icon-reverse-alt"></i> icon-reverse-alt</li>
+                  <li><i class="icon-stop-alt"></i> icon-stop-alt</li>
+                  <li><i class="icon-play-alt"></i> icon-play-alt</li>
+                  <li><i class="icon-pause-alt"></i> icon-pause-alt</li>
+                  <li><i class="icon-record"></i> icon-record</li>
+                  <li><i class="icon-repeat-alt"></i> icon-repeat-alt</li>
+                  <li><i class="icon-mic"></i> icon-mic</li>
+                  <li><i class="icon-mic-alt"></i> icon-mic-alt</li>
+                  <li><i class="icon-speaker"></i> icon-speaker</li>
+                  <li><i class="icon-smiley"></i> icon-smiley</li>
+                  <li><i class="icon-smiley-alt"></i> icon-smiley-alt</li>
+                  <li><i class="icon-search-alt"></i> icon-search-alt</li>
+                  <li><i class="icon-screen"></i> icon-screen</li>
+                  <li><i class="icon-screen-alt"></i> icon-screen-alt</li>
+                  <li><i class="icon-time-alt"></i> icon-time-alt</li>
+                  <li><i class="icon-shopping-cart-sign"></i> icon-shopping-cart-sign</li>
+                  <li><i class="icon-rss"></i> icon-rss</li>
+                  <li><i class="icon-quotes"></i> icon-quotes</li>
+                  <li><i class="icon-quotes-alt"></i> icon-quotes-alt</li>
+                  <li><i class="icon-photo"></i> icon-photo</li>
+                  <li><i class="icon-photo-alt"></i> icon-photo-alt</li>
+                </div>
+                <div class="span2">
+                  <li><i class="icon-wheelchair"></i> icon-wheelchair</li>
+                  <li><i class="icon-universal-access"></i> icon-universal-access</li>
+                  <li><i class="icon-question"></i> icon-question</li>
+                  <li><i class="icon-phone-alt"></i> icon-phone-alt</li>
+                  <li><i class="icon-phone"></i> icon-phone</li>
+                  <li><i class="icon-person"></i> icon-person</li>
+                  <li><i class="icon-pencil-alt"></i> icon-pencil-alt</li>
+                  <li><i class="icon-path"></i> icon-path</li>
+                  <li><i class="icon-paper-clip-alt"></i> icon-paper-clip-alt</li>
+                  <li><i class="icon-paper-clip"></i> icon-paper-clip</li>
+                  <li><i class="icon-network"></i> icon-network</li>
+                  <li><i class="icon-error-alt"></i> icon-error-alt</li>
+                  <li><i class="icon-error"></i> icon-error</li>
+                  <li><i class="icon-map-marker-alt"></i> icon-map-marker-alt</li>
+                  <li><i class="icon-male"></i> icon-male</li>
+                  <li><i class="icon-envelope-alt"></i> icon-envelope-alt</li>
+                  <li><i class="icon-lock-alt"></i> icon-lock-alt</li>
+                  <li><i class="icon-laptop-alt"></i> icon-laptop-alt</li>
+                  <li><i class="icon-laptop"></i> icon-laptop</li>
+                  <li><i class="icon-key"></i> icon-key</li>
+                  <li><i class="icon-iphone-home"></i> icon-iphone-home</li>
+                  <li><i class="icon-instagram"></i> icon-instagram</li>
+                  <li><i class="icon-inbox-alt"></i> icon-inbox-alt</li>
+                  <li><i class="icon-idea-alt"></i> icon-idea-alt</li>
+                  <li><i class="icon-idea"></i> icon-idea</li>
+                  <li><i class="icon-home-alt"></i> icon-home-alt</li>
+                  <li><i class="icon-heart-empty"></i> icon-heart-empty</li>
+                  <li><i class="icon-heart-alt"></i> icon-heart-alt</li>
+                  <li><i class="icon-hearing-impaired"></i> icon-hearing-impaired</li>
+                  <li><i class="icon-guidedog"></i> icon-guidedog</li>
+                  <li><i class="icon-group-alt"></i> icon-group-alt</li>
+                  <li><i class="icon-group"></i> icon-group</li>
+                </div>
+                <div class="span2">
+                  <li><i class="icon-graph-alt"></i> icon-graph-alt</li>
+                  <li><i class="icon-graph"></i> icon-graph</li>
+                  <li><i class="icon-globe-alt"></i> icon-globe-alt</li>
+                  <li><i class="icon-glasses"></i> icon-glasses</li>
+                  <li><i class="icon-forward-alt"></i> icon-forward-alt</li>
+                  <li><i class="icon-folder-sign"></i> icon-folder-sign</li>
+                  <li><i class="icon-folder"></i> icon-folder</li>
+                  <li><i class="icon-flickr"></i> icon-flickr</li>
+                  <li><i class="icon-flag-alt"></i> icon-flag-alt</li>
+                  <li><i class="icon-file-new-alt"></i> icon-file-new-alt</li>
+                  <li><i class="icon-file-new"></i> icon-file-new</li>
+                  <li><i class="icon-file-edit-alt"></i> icon-file-edit-alt</li>
+                  <li><i class="icon-file-edit"></i> icon-file-edit</li>
+                  <li><i class="icon-file-alt"></i> icon-file-alt</li>
+                  <li><i class="icon-female"></i> icon-female</li>
+                  <li><i class="icon-inbox-box"></i> icon-inbox-box</li>
+                  <li><i class="icon-dashboard"></i> icon-dashboard</li>
+                  <li><i class="icon-credit-card"></i> icon-credit-card</li>
+                  <li><i class="icon-compass-alt"></i> icon-compass-alt</li>
+                  <li><i class="icon-compass"></i> icon-compass</li>
+                  <li><i class="icon-comment-alt"></i> icon-comment-alt</li>
+                  <li><i class="icon-child"></i> icon-child</li>
+                  <li><i class="icon-check-empty"></i> icon-check-empty</li>
+                  <li><i class="icon-cc"></i> icon-cc</li>
+                  <li><i class="icon-calendar-sign"></i> icon-calendar-sign</li>
+                  <li><i class="icon-blind"></i> icon-blind</li>
+                  <li><i class="icon-asl"></i> icon-asl</li>
+                  <li><i class="icon-cogs"></i> icon-cogs</li>
+                  <li><i class="icon-cog-alt"></i> icon-cog-alt</li>
+                  <li><i class="icon-cloud-alt"></i> icon-cloud-alt</li>
+                  <li><i class="icon-cloud"></i> icon-cloud</li>
+                  <li><i class="icon-braille"></i> icon-braille</li>
+                  <li><i class="icon-bookmark-empty"></i> icon-bookmark-empty</li>
+                </div> 
+                <div class="span2">
+                  <li><i class="icon-blogger"></i> icon-blogger</li>
+                  <li><i class="icon-adult"></i> icon-adult</li>
+                  <li><i class="icon-address-book"></i> icon-address-book</li>
+                  <li><i class="icon-address-book-alt"></i> icon-address-book-alt</li>
+                  <li><i class="icon-w3c"></i> icon-w3c</li>
+                  <li><i class="icon-css"></i> icon-css</li>
+                </div>
+              </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/><br/>
+    <div class="corgi_footer">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><a href="">These</a></li>
+              <li><a href="">Are</a></li>
+              <li><a href="">Just</a></li>
+              <li><a href="">Dummy</a></li>
+              <li><a href="">Links</a></li>
+            </ul>
+            <div class="corgi_copyright">
+              &copy; 2013 Bootstrap Micro
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+   <script src="js/bootstrap.js"></script>
   </body>
 </html>
